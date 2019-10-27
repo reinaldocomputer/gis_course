@@ -9,11 +9,15 @@
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <style>
-        html, body, #map {
+        html, body {
             width: 100%;
             height: 100%;
             padding: 0;
             margin: 0;
+        }
+        #map{
+            width: 70%;
+            height: 70%;
         }
         </style>
         <title></title>
@@ -158,7 +162,7 @@
      console.log("You clicked the map at " + e.latlng);
     }
 
-    map.on('click', onMapClick);
+    map.setView([-0.003,0.00433],17)
 
         </script>
     </body>
